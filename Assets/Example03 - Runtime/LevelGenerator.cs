@@ -1,5 +1,7 @@
 using UnityEngine;
 
+using UnityEngine.AI.Navigation;
+
 public class LevelGenerator : MonoBehaviour {
 
 	public int width = 10;
@@ -12,7 +14,9 @@ public class LevelGenerator : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GenerateLevel();
+		GenerateLevel(); 
+
+		//update navmesh
 	}
 	
 	// Create a grid based level
